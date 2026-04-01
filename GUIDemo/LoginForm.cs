@@ -21,5 +21,25 @@ namespace GUIDemo
         {
 
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+
+            if(username == "" && password == "")
+            {
+                MessageBox.Show("Please Enter username and password");
+            }
+            if(username == "admin" & password == "12345")
+            {
+                MessageBox.Show("Login Successful!");
+
+                DashboardForm dashboardForm = new DashboardForm();
+                dashboardForm.Show();
+
+                this.Hide();
+            }
+        }
     }
 }

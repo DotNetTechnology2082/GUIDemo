@@ -35,6 +35,7 @@
             txtPassword = new TextBox();
             btnLogin = new Button();
             btnClear = new Button();
+            domainUpDown1 = new DomainUpDown();
             SuspendLayout();
             // 
             // lblLoginForm
@@ -89,6 +90,7 @@
             btnLogin.TabIndex = 5;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // btnClear
             // 
@@ -99,11 +101,20 @@
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
             // 
+            // domainUpDown1
+            // 
+            domainUpDown1.Location = new Point(0, 0);
+            domainUpDown1.Name = "domainUpDown1";
+            domainUpDown1.Size = new Size(210, 35);
+            domainUpDown1.TabIndex = 7;
+            domainUpDown1.Text = "domainUpDown1";
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(domainUpDown1);
             Controls.Add(btnClear);
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
@@ -126,5 +137,6 @@
         private TextBox txtPassword;
         private Button btnLogin;
         private Button btnClear;
+        private DomainUpDown domainUpDown1;
     }
 }
