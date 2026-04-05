@@ -99,41 +99,42 @@ namespace GUIDemo
             lblDOB.TabIndex = 5;
             lblDOB.Text = "DOB: ";
             // 
-            // textBox1
+            // txtName
             // 
             txtName.Location = new Point(316, 134);
-            txtName.Name = "textBox1";
+            txtName.Name = "txtName";
             txtName.Size = new Size(355, 35);
             txtName.TabIndex = 6;
             // 
-            // textBox2
+            // txtEmail
             // 
             txtEmail.Location = new Point(316, 201);
-            txtEmail.Name = "textBox2";
+            txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(355, 35);
             txtEmail.TabIndex = 7;
             // 
-            // textBox3
+            // txtPhone
             // 
             txtPhone.Location = new Point(316, 274);
-            txtPhone.Name = "textBox3";
+            txtPhone.Name = "txtPhone";
             txtPhone.Size = new Size(355, 35);
             txtPhone.TabIndex = 8;
             // 
-            // dateTimePicker1
+            // dtDOB
             // 
             dtDOB.Location = new Point(321, 417);
-            dtDOB.Name = "dateTimePicker1";
+            dtDOB.Name = "dtDOB";
             dtDOB.Size = new Size(350, 35);
             dtDOB.TabIndex = 9;
             // 
-            // comboBox1
+            // comboGender
             // 
             comboGender.FormattingEnabled = true;
             comboGender.Location = new Point(317, 343);
-            comboGender.Name = "comboBox1";
+            comboGender.Name = "comboGender";
             comboGender.Size = new Size(354, 38);
             comboGender.TabIndex = 10;
+            comboGender.SelectedIndexChanged += comboGender_SelectedIndexChanged;
             // 
             // btnSave
             // 
@@ -150,7 +151,7 @@ namespace GUIDemo
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(131, 40);
             btnCancel.TabIndex = 12;
-            btnCancel.Text = "button1";
+            btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             // 
             // StudentForm

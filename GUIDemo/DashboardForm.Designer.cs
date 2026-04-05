@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnDashboardForm = new Button();
+            SuspendLayout();
+            // 
+            // btnDashboardForm
+            // 
+            btnDashboardForm.Location = new Point(42, 59);
+            btnDashboardForm.Name = "btnDashboardForm";
+            btnDashboardForm.Size = new Size(234, 40);
+            btnDashboardForm.TabIndex = 0;
+            btnDashboardForm.Text = "Manage Student";
+            btnDashboardForm.UseVisualStyleBackColor = true;
+            btnDashboardForm.Click += btnDashboardForm_Click;
+            // 
+            // DashboardForm
+            // 
+            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnDashboardForm);
+            Name = "DashboardForm";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnDashboardForm;
     }
 }

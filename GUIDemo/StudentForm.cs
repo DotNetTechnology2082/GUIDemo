@@ -22,6 +22,15 @@ namespace GUIDemo
 
         private void StudentForm_Load(object sender, EventArgs e)
         {
+            comboGender.Items.Add("Male");
+            comboGender.Items.Add("Female");
+            comboGender.Items.Add("Other");
+
+            comboGender.SelectedIndex = 0;
+        }
+
+        private void comboGender_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -14,5 +14,13 @@ namespace GUIDemo
         {
             InitializeComponent();
         }
+
+        private void btnDashboardForm_Click(object sender, EventArgs e)
+        {
+            StudentForm studentForm = new StudentForm();
+            studentForm.ShowDialog();
+
+            this.Hide();
+        }
     }
 }
