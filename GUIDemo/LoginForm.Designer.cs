@@ -124,6 +124,7 @@
             Controls.Add(lblLoginForm);
             Name = "LoginForm";
             Text = "Form1";
+            Load += LoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

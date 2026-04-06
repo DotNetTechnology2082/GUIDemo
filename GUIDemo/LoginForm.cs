@@ -27,11 +27,11 @@ namespace GUIDemo
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            if(username == "" && password == "")
+            if (username == "" && password == "")
             {
                 MessageBox.Show("Please Enter username and password");
             }
-            if(username == "admin" & password == "12345")
+            if (username == "admin" & password == "12345")
             {
                 MessageBox.Show("Login Successful!");
 
@@ -40,6 +40,11 @@ namespace GUIDemo
 
                 this.Hide();
             }
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

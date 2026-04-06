@@ -43,6 +43,8 @@ namespace GUIDemo
             comboGender = new ComboBox();
             btnSave = new Button();
             btnCancel = new Button();
+            dgvStudents = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvStudents).BeginInit();
             SuspendLayout();
             // 
             // lblStudentForm
@@ -144,6 +146,7 @@ namespace GUIDemo
             btnSave.TabIndex = 11;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // btnCancel
             // 
@@ -154,11 +157,22 @@ namespace GUIDemo
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             // 
+            // dgvStudents
+            // 
+            dgvStudents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvStudents.Location = new Point(697, 130);
+            dgvStudents.Name = "dgvStudents";
+            dgvStudents.RowHeadersWidth = 72;
+            dgvStudents.Size = new Size(589, 459);
+            dgvStudents.TabIndex = 13;
+            dgvStudents.CellContentClick += dataGridView1_CellContentClick;
+            // 
             // StudentForm
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1298, 727);
+            Controls.Add(dgvStudents);
             Controls.Add(btnCancel);
             Controls.Add(btnSave);
             Controls.Add(comboGender);
@@ -175,6 +189,7 @@ namespace GUIDemo
             Name = "StudentForm";
             Text = "StudentForm";
             Load += StudentForm_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvStudents).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -194,5 +209,6 @@ namespace GUIDemo
         private ComboBox comboGender;
         private Button btnSave;
         private Button btnCancel;
+        private DataGridView dgvStudents;
     }
 }
